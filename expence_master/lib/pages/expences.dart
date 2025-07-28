@@ -21,12 +21,15 @@ class _ExpencesState extends State<Expences> {
             color: Colors.white,
           ),
           actions: [
-            IconButton(
-              icon: const Icon(Icons.add),
-              color: Colors.white,
-              onPressed: () {
-                // Handle add expense action
-              },
+            Container(
+              color: Colors.amber,
+              child: IconButton(
+                icon: const Icon(Icons.add),
+                color: const Color.fromARGB(255, 0, 0, 0),
+                onPressed: () {
+                  // Handle add expense action
+                },
+              ),
             ),
           ],
         ),
