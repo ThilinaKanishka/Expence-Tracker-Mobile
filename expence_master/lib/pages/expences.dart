@@ -20,6 +20,15 @@ class _ExpencesState extends State<Expences> {
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.add),
+              color: Colors.white,
+              onPressed: () {
+                // Handle add expense action
+              },
+            ),
+          ],
         ),
       ),
     );
