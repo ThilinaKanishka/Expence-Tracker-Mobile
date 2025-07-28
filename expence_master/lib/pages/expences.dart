@@ -10,6 +10,6 @@ class Expences extends StatefulWidget {
 class _ExpencesState extends State<Expences> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(appBar: AppBar(title: Text('Expences Masetr')));
   }
 }
