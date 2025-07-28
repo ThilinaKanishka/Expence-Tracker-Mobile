@@ -15,6 +15,7 @@ class _ExpencesState extends State<Expences> {
         appBar: AppBar(
           title: const Text('Expences Masetr'),
           backgroundColor: const Color.fromARGB(255, 77, 4, 195),
+          elevation: 0,
           titleTextStyle: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,
