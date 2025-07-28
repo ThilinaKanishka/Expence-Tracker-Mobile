@@ -10,6 +10,11 @@ class Expences extends StatefulWidget {
 class _ExpencesState extends State<Expences> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('Expences Masetr')));
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Expences Masetr'),
+        backgroundColor: const Color.fromARGB(255, 77, 4, 195),
+      ),
+    );
   }
 }
