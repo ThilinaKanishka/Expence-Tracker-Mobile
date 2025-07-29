@@ -1,3 +1,8 @@
+//created a unique id using uuid
+import 'package:uuid/uuid.dart';
+
+final uuid = Uuid().v4();
+
 //enum for catagories
 enum Category { food, travel, leasure, work }
 
