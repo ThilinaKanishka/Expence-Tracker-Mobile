@@ -1,3 +1,6 @@
+//enum for catagories
+enum Category { food, travel, leasure, work }
+
 class ExpenceModel {
   ExpenceModel({required this.title, required this.amount, required this.date});
 
