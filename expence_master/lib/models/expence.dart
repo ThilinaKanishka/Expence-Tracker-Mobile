@@ -1,7 +1,7 @@
 //created a unique id using uuid
 import 'package:uuid/uuid.dart';
 
-final uuid = Uuid().v4();
+final uuid = const Uuid().v4();
 
 //enum for catagories
 enum Category { food, travel, leasure, work }
@@ -12,7 +12,7 @@ class ExpenceModel {
     required this.amount,
     required this.date,
     required this.category,
-  }) : id = "001";
+  }) : id = uuid;
 
   final String id;
   final String title;
