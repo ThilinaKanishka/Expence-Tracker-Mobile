@@ -7,7 +7,7 @@ class ExpenceModel {
     required this.amount,
     required this.date,
     required this.category,
-  });
+  }) : id = "001";
 
   final String id;
   final String title;
