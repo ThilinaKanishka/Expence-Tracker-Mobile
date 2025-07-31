@@ -51,7 +51,7 @@ class _ExpencesState extends State<Expences> {
             ),
           ],
         ),
-        body: ,
+        body: ListView.builder(itemBuilder: itemBuilder),
       ),
     );
   }
