@@ -11,7 +11,12 @@ class Expences extends StatefulWidget {
 class _ExpencesState extends State<Expences> {
   //expensesList
   final List<ExpenceModel> _expenceList = [
-    ExpenceModel(title: title, amount: amount, date: date, category: category),
+    ExpenceModel(
+      title: "Football",
+      amount: 12.5,
+      date: DateTime.now(),
+      category: Category.leasure,
+    ),
   ];
 
   @override
