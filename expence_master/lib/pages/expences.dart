@@ -1,3 +1,4 @@
+import 'package:expence_master/models/expence.dart';
 import 'package:flutter/material.dart';
 
 class Expences extends StatefulWidget {
@@ -8,6 +9,9 @@ class Expences extends StatefulWidget {
 }
 
 class _ExpencesState extends State<Expences> {
+  //expensesList
+  final List<ExpenceModel> _expenceList = [];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
