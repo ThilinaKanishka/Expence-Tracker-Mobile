@@ -12,6 +12,14 @@ class _ExpencesState extends State<Expences> {
   //expensesList
   final List<ExpenceModel> _expenceList = [];
 
+  ExpenceModel _expenceModel = ExpenceModel(
+    id: '',
+    title: '',
+    amount: 0.0,
+    date: DateTime.now(),
+    category: '',
+  );
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
