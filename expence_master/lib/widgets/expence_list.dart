@@ -19,6 +19,7 @@ class ExpenceList extends StatelessWidget {
                   expenceList[index].title,
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
+                const SizedBox(height: 4),
                 Row(
                   children: [
                     Text(expenceList[index].amount.toStringAsFixed(2)),
