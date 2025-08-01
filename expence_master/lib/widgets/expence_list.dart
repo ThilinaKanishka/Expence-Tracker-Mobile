@@ -14,6 +14,7 @@ class ExpenceList extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   expenceList[index].title,
