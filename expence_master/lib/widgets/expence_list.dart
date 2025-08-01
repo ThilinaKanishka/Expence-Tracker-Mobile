@@ -25,7 +25,8 @@ class ExpenceList extends StatelessWidget {
 
                     Row(
                       children: [
-                        Icon(Icons.trending_down),
+                        const Icon(Icons.trending_down),
+                        const SizedBox(width: 8),
                         Text(expenceList[index].date.toString()),
                       ],
                     ),
