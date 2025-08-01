@@ -5,6 +5,13 @@ class ExpenceList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Expanded(
+      child: ListView.builder(
+        itemCount: _expenceList.length,
+        itemBuilder: (context, index) {
+          return Text(_expenceList[index].title);
+        },
+      ),
+    );
   }
 }
