@@ -14,7 +14,7 @@ class ExpenceList extends StatelessWidget {
         itemCount: expenceList.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: ExpenceTile(expence: expenceList[index]),
           );
         },
