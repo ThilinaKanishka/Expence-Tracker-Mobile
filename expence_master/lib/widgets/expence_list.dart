@@ -13,7 +13,10 @@ class ExpenceList extends StatelessWidget {
       child: ListView.builder(
         itemCount: expenceList.length,
         itemBuilder: (context, index) {
-          return ExpenceTile(expence: expenceList[index]);
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ExpenceTile(expence: expenceList[index]),
+          );
         },
       ),
     );
