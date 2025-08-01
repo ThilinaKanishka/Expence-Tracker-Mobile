@@ -23,7 +23,12 @@ class ExpenceList extends StatelessWidget {
                   children: [
                     Text(expenceList[index].amount.toStringAsFixed(2)),
 
-                    Row(children: [Icon(Icons.trending_down)]),
+                    Row(
+                      children: [
+                        Icon(Icons.trending_down),
+                        Text(expenceList[index].date.toString()),
+                      ],
+                    ),
                   ],
                 ),
               ],
