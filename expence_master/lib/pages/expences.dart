@@ -23,6 +23,12 @@ class _ExpencesState extends State<Expences> {
       date: DateTime.now(),
       category: Category.food,
     ),
+    ExpenceModel(
+      title: "Electricity Bill",
+      amount: 75.0,
+      date: DateTime.now(),
+      category: Category.work,
+    ),
   ];
 
   @override
