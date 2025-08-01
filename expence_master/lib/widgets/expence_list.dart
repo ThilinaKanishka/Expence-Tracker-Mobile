@@ -1,4 +1,5 @@
 import 'package:expence_master/models/expence.dart';
+import 'package:expence_master/widgets/expence_tile.dart';
 import 'package:flutter/material.dart';
 
 class ExpenceList extends StatelessWidget {
@@ -12,37 +13,7 @@ class ExpenceList extends StatelessWidget {
       child: ListView.builder(
         itemCount: expenceList.length,
         itemBuilder: (context, index) {
-          return Card(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 16.0,
-                vertical: 20,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    expenceList[index].title,
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
-                  const SizedBox(height: 4),
-                  Row(
-                    children: [
-                      Text(expenceList[index].amount.toStringAsFixed(2)),
-                      const Spacer(),
-                      Row(
-                        children: [
-                          const Icon(Icons.trending_down),
-                          const SizedBox(width: 8),
-                          Text(expenceList[index].date.toString()),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          );
+          return ExpenceTile();
         },
       ),
     );
