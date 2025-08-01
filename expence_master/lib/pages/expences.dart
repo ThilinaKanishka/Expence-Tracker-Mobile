@@ -53,7 +53,7 @@ class _ExpencesState extends State<Expences> {
         ),
         body: ListView.builder(
           itemCount: _expenceList.length,
-          itemBuilder: (context, itemBuilder) {
+          itemBuilder: (context, index) {
             return Text(_expenceList[index].title);
           },
         ),
