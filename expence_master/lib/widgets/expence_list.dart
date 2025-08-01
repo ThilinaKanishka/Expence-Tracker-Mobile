@@ -24,7 +24,7 @@ class ExpenceList extends StatelessWidget {
                 Row(
                   children: [
                     Text(expenceList[index].amount.toStringAsFixed(2)),
-
+                    const Spacer(),
                     Row(
                       children: [
                         const Icon(Icons.trending_down),
