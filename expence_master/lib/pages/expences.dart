@@ -58,7 +58,7 @@ class _ExpencesState extends State<Expences> {
             ),
           ],
         ),
-        body: Column(children: [const ExpenceList()]),
+        body: Column(children: [ExpenceList(expenceList: _expenceList)]),
       ),
     );
   }
