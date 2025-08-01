@@ -10,9 +10,9 @@ class ExpenceList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-        itemCount: _expenceList.length,
+        itemCount: expenceList.length,
         itemBuilder: (context, index) {
-          return Text(_expenceList[index].title);
+          return Text(expenceList[index].title);
         },
       ),
     );
