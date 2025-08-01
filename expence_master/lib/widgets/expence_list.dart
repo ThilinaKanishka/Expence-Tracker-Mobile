@@ -23,10 +23,7 @@ class ExpenceList extends StatelessWidget {
                   children: [
                     Text(expenceList[index].amount.toStringAsFixed(2)),
 
-                    Row(children: [
-                        
-                      ],
-                    ),
+                    Row(children: [Icon(Icons.trending_down)]),
                   ],
                 ),
               ],
