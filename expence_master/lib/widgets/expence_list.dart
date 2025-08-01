@@ -19,6 +19,7 @@ class ExpenceList extends StatelessWidget {
                   expenceList[index].title,
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
+                Row(children: [Text(expenceList[index].amount)]),
               ],
             ),
           );
