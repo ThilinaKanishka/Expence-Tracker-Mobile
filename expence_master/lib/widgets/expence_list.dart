@@ -13,7 +13,14 @@ class ExpenceList extends StatelessWidget {
         itemCount: expenceList.length,
         itemBuilder: (context, index) {
           return Card(
-            child: Column(children: [Text(expenceList[index].title)]),
+            child: Column(
+              children: [
+                Text(
+                  expenceList[index].title,
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+              ],
+            ),
           );
         },
       ),
