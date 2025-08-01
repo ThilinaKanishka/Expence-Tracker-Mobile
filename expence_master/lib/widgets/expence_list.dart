@@ -22,6 +22,11 @@ class ExpenceList extends StatelessWidget {
                 Row(
                   children: [
                     Text(expenceList[index].amount.toStringAsFixed(2)),
+
+                    Row(children: [
+                        
+                      ],
+                    ),
                   ],
                 ),
               ],
