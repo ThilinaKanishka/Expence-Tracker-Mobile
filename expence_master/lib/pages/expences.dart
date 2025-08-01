@@ -59,11 +59,13 @@ class _ExpencesState extends State<Expences> {
         ),
         body: Column(
           children: [
-            ListView.builder(
-              itemCount: _expenceList.length,
-              itemBuilder: (context, index) {
-                return Text(_expenceList[index].title);
-              },
+            Expanded(
+              child: ListView.builder(
+                itemCount: _expenceList.length,
+                itemBuilder: (context, index) {
+                  return Text(_expenceList[index].title);
+                },
+              ),
             ),
           ],
         ),
